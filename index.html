@@ -3,137 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="src/assets//images/favicon.png"/>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/css/main.css">
     <title>Резюме</title>
 </head>
 <body>
     
-    <header>
-        <h1>Мищенко Андрей</h1>
-        <p><em>Junior Front-end + Python Developer</em></p>
-        <nav>
-            <ul>
-                <li><a href="#AboutMe">Обо мне</a></li>
-                <li><a href="#Skills">Навыки</a></li>
-                <li><a href="#Education">Образование</a></li>
-                <li><a href="#Works">Работы</a></li>
-                <li><a href="#Contacts">Контакты</a></li>
+    <header class="header">
+        <h1 class="header__title">Мищенко Андрей</h1>
+        <p class="header__subtitle"><em>Junior Front-end + Python Developer</em></p>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#AboutMe" class="nav__link">Обо мне</a></li>
+                <li class="nav__item"><a href="#Skills" class="nav__link">Навыки</a></li>
+                <li class="nav__item"><a href="#Education" class="nav__link">Образование</a></li>
+                <li class="nav__item"><a href="#Works" class="nav__link">Работы</a></li>
+                <li class="nav__item"><a href="#Contacts" class="nav__link">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="AboutMe">
-            <h2>Обо мне</h2>
-            <div>
-                <p>Любознательный студент-инженер в области компьютерных наук, обладающий лидерскими качествами, стремящийся использовать прочные навыки разработки, уделяя особое внимание сотрудничеству, общению и увлеченности.</p>
-                <strong>ФИО: </strong>Мищенко Андрей Михайлович<br>
-                <strong>Возраст: </strong>19 лет<br>
-                <strong>Город проживания: </strong>Москва<br>
+    <main class="main">
+        <section id="AboutMe" class="section about">
+            <h2 class="section__title">Обо мне</h2>
+            <div class="about__content">
+                <p class="about__text">Любознательный студент-инженер в области компьютерных наук, обладающий лидерскими качествами, стремящийся использовать прочные навыки разработки, уделяя особое внимание сотрудничеству, общению и увлеченности.</p>
+                <div class="about__info">
+                    <strong class="about__label">ФИО: </strong><span class="about__value">Мищенко Андрей Михайлович</span><br>
+                    <strong class="about__label">Возраст: </strong><span class="about__value">19 лет</span><br>
+                    <strong class="about__label">Город проживания: </strong><span class="about__value">Москва</span><br>
+                </div>
             </div>
         </section>
-        <section id="Skills">
-            <h2>Навыки</h2>
-            <p>Мне нравится создавать вещи, которые живут в Интернете, будь то веб-сайты, приложения или что-то среднее.</p>
-            <table>
-                <tr>
-                    <th>Технологии</th>
-                    <th>Уровень</th>
+        
+        <section id="Skills" class="section skills">
+            <h2 class="section__title">Навыки</h2>
+            <p class="skills__intro">Мне нравится создавать вещи, которые живут в Интернете, будь то веб-сайты, приложения или что-то среднее.</p>
+            <table class="skills-table">
+                <tr class="skills-table__row">
+                    <th class="skills-table__header">Технологии</th>
+                    <th class="skills-table__header">Уровень</th>
                 </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>Продвинутый</td>
+                <tr class="skills-table__row">
+                    <td class="skills-table__cell">Python</td>
+                    <td class="skills-table__cell skills-table__cell--advanced">Продвинутый</td>
                 </tr>
-                <tr>
-                    <td>C++</td>
-                    <td>Продвинутый</td>
+                <tr class="skills-table__row">
+                    <td class="skills-table__cell">C++</td>
+                    <td class="skills-table__cell skills-table__cell--advanced">Продвинутый</td>
                 </tr>
-                <tr>
-                    <td>Java</td>
-                    <td>Начинающий</td>
+                <tr class="skills-table__row">
+                    <td class="skills-table__cell">Java</td>
+                    <td class="skills-table__cell skills-table__cell--beginner">Начинающий</td>
                 </tr>
-                <tr>
-                    <td>HTML5</td>
-                    <td>Продвинутый</td>
+                <tr class="skills-table__row">
+                    <td class="skills-table__cell">HTML5</td>
+                    <td class="skills-table__cell skills-table__cell--advanced">Продвинутый</td>
                 </tr>
-                <tr>
-                    <td>CSS3</td>
-                    <td>Продвинутый</td>
+                <tr class="skills-table__row">
+                    <td class="skills-table__cell">CSS3</td>
+                    <td class="skills-table__cell skills-table__cell--advanced">Продвинутый</td>
                 </tr>
-                <tr>
-                    <td>Java Script</td>
-                    <td>Продвинутый</td>
+                <tr class="skills-table__row">
+                    <td class="skills-table__cell">Java Script</td>
+                    <td class="skills-table__cell skills-table__cell--advanced">Продвинутый</td>
                 </tr>
-                <tr>
-                    <td>SQL</td>
-                    <td>Средний</td>
+                <tr class="skills-table__row">
+                    <td class="skills-table__cell">SQL</td>
+                    <td class="skills-table__cell skills-table__cell--intermediate">Средний</td>
                 </tr>
-                <tr>
-                    <td>ReactJS</td>
-                    <td>Продвинутый</td>
+                <tr class="skills-table__row">
+                    <td class="skills-table__cell">ReactJS</td>
+                    <td class="skills-table__cell skills-table__cell--advanced">Продвинутый</td>
                 </tr>
-                <tr>
-                    <td>Type Script</td>
-                    <td>Продвинутый</td>
+                <tr class="skills-table__row">
+                    <td class="skills-table__cell">Type Script</td>
+                    <td class="skills-table__cell skills-table__cell--advanced">Продвинутый</td>
                 </tr>
             </table>
         </section>
-        <section id="Education">
-            <h2>Образование</h2>
-            <div>
-                <strong>Школа: </strong>МБОУ СШ №2 имени Е.И. Куропаткина - среднее общее, 11 классов<br>
-                <strong>Период обучения: </strong>09.2013 г. - 06.2024 г.<br>
-                <strong>Университет:</strong> РТУ МИРЭА, Программная инженерия, 2 курс; Код направления: 09.03.04<br>
+        
+        <section id="Education" class="section education">
+            <h2 class="section__title">Образование</h2>
+            <div class="education__content">
+                <div class="education__item">
+                    <strong class="education__label">Школа: </strong>
+                    <span class="education__value">МБОУ СШ №2 имени Е.И. Куропаткина - среднее общее, 11 классов</span>
+                </div>
+                <div class="education__item">
+                    <strong class="education__label">Период обучения: </strong>
+                    <span class="education__value">09.2013 г. - 06.2024 г.</span>
+                </div>
+                <div class="education__item">
+                    <strong class="education__label">Университет:</strong>
+                    <span class="education__value">РТУ МИРЭА, Программная инженерия, 2 курс; Код направления: 09.03.04</span>
+                </div>
             </div>
-            <h3>Дополнительное образование</h3>
-                <ol>
-                    <li>Лицей Академии Яндекса (2021-2023)</li>
-                    <li>PROWEB (2023-2024)</li>
-                </ol>
+            <h3 class="education__subtitle">Дополнительное образование</h3>
+            <ol class="education__list">
+                <li class="education__list-item">Лицей Академии Яндекса (2021-2023)</li>
+                <li class="education__list-item">PROWEB (2023-2024)</li>
+            </ol>
         </section>
-        <section id="Works">
-            <h2>Работы</h2>
-            <div>
-                <ol>
-                    <li>
-                        <div>
-                            <a href="https://github.com/Andrey0828/Steamscroller"><img src="src/assets/images/stemscroller.png" alt=""></a>
-                            <p>Сайт, предоставляющий информацию об играх и пользователях платформы Steam; вы можете изучать общедоступную информацию о профилях пользователей, отслеживать их прогресс и статистику в играх; вы можете изучать информацию об играх: их описание, теги, поддерживаемые платформы, системные требования, рейтинг и региональные цены.</p>
+        
+        <section id="Works" class="section works">
+            <h2 class="section__title">Работы</h2>
+            <div class="works__container">
+                <ol class="works__list">
+                    <li class="works__item">
+                        <div class="work-card">
+                            <a href="https://github.com/Andrey0828/Steamscroller" class="work-card__link">
+                                <img src="assets/images/stemscroller.png" alt="Steamscroller проект" class="work-card__image">
+                            </a>
+                            <p class="work-card__description">Сайт, предоставляющий информацию об играх и пользователях платформы Steam; вы можете изучать общедоступную информацию о профилях пользователей, отслеживать их прогресс и статистику в играх; вы можете изучать информацию об играх: их описание, теги, поддерживаемые платформы, системные требования, рейтинг и региональные цены.</p>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <a href="https://github.com/Andrey0828"><img src="src/assets/images/weather.png" alt=""></a>
-                            <p>Веб-сайт, который предоставляет информацию о погоде: ветре, давлении, температуре, влажность и многое другое, тематика сайта меняется в зависимости от погоды в указанном городе.</p>
+                    <li class="works__item">
+                        <div class="work-card">
+                            <a href="https://github.com/Andrey0828" class="work-card__link">
+                                <img src="assets/images/weather.png" alt="Погодный проект" class="work-card__image">
+                            </a>
+                            <p class="work-card__description">Веб-сайт, который предоставляет информацию о погоде: ветре, давлении, температуре, влажность и многое другое, тематика сайта меняется в зависимости от погоды в указанном городе.</p>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <a href="https://github.com/Andrey0828"><img src="src/assets/images/notes.png" alt=""></a>
-                            <p>Веб-сайт для ваших заметок, вы можете добавлять, удалять, редактировать, искать заметки, а также менять язык.</p>
+                    <li class="works__item">
+                        <div class="work-card">
+                            <a href="https://github.com/Andrey0828" class="work-card__link">
+                                <img src="assets/images/notes.png" alt="Проект заметок" class="work-card__image">
+                            </a>
+                            <p class="work-card__description">Веб-сайт для ваших заметок, вы можете добавлять, удалять, редактировать, искать заметки, а также менять язык.</p>
                         </div>
                     </li>
                 </ol>
             </div>
         </section>
-        <section id="Contacts">
-            <h2>Контакты</h2>
-            <div>
-                <strong>Телефон: </strong><a href="tel:+79224207705">+79224207705</a><br>
-                <strong>Почта: </strong><a href="mailto:live.0606@mail.ru">live.0606@mail.ru</a><br>
+        
+        <section id="Contacts" class="section contacts">
+            <h2 class="section__title">Контакты</h2>
+            <div class="contacts__content">
+                <div class="contacts__item">
+                    <strong class="contacts__label">Телефон: </strong>
+                    <a href="tel:+79224207705" class="contacts__link">+79224207705</a>
+                </div>
+                <div class="contacts__item">
+                    <strong class="contacts__label">Почта: </strong>
+                    <a href="mailto:live.0606@mail.ru" class="contacts__link">live.0606@mail.ru</a>
+                </div>
             </div>
-            <br>
         </section>
     </main>
 
-    <footer>
-        <hr>
-        <div>
-            <a href="https://github.com/Andrey0828?tab=repositories"><img src="src/assets/images/github.svg" alt="" /></a>
-            <a href="https://vk.com/the_world_is_a_joke"><img src="src/assets/images/vk.svg" alt="" /></a>
-            <a href="https://t.me/if_i_weere_you"><img src="src/assets/images/telegram.svg" alt="" /></a>
+    <footer class="footer">
+        <hr class="footer__divider">
+        <div class="footer__social">
+            <a href="https://github.com/Andrey0828?tab=repositories" class="footer__link">
+                <img src="assets/images/github.svg" alt="GitHub" class="footer__icon" />
+            </a>
+            <a href="https://vk.com/the_world_is_a_joke" class="footer__link">
+                <img src="assets/images/vk.svg" alt="VK" class="footer__icon" />
+            </a>
+            <a href="https://t.me/if_i_weere_you" class="footer__link">
+                <img src="assets/images/telegram.svg" alt="Telegram" class="footer__icon" />
+            </a>
         </div>
-        <p><small>&copy; Все права защищены 2025</small></p>
+        <p class="footer__copyright"><small>&copy; Все права защищены 2025</small></p>
     </footer>
 
 </body>
